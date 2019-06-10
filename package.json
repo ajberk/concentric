@@ -1,16 +1,21 @@
 {
   "name": "concentric",
+  "homepage": "https://ajberk.github.io/concentric/",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "run": "parcel index.html",
+    "build": "parcel build index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "parcel-bundler": "^1.12.3",
     "typescript": "^3.5.1"
   },
