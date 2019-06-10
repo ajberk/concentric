@@ -1,5 +1,4 @@
 import React from 'react'
-import Square from './Square'
 import styles from 'styled-components'
 import ConcentricSquares from "./ConcentricSquares";
 
@@ -10,12 +9,19 @@ const Container = styles.div`
   height: 100%;
 `;
 
+const Wrapper = styles.div`
+  display: flex;
+  border: 12px solid rgb(234, 240, 234)  
+`;
+
 export default () => {
     return (
         <div>
             <Container>
-              <ConcentricSquares/>
-              <ConcentricSquares/>
+                <Wrapper>
+                    <ConcentricSquares/>
+                    <ConcentricSquares reverse/>
+                </Wrapper>
             </Container>
         </div>
     )
