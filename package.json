@@ -6,9 +6,9 @@
   "main": "index.js",
   "scripts": {
     "run": "parcel index.html",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html --public-url /concentric/",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
